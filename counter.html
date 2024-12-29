@@ -19,16 +19,14 @@
     ></script>
   </head>
   <body class="">
-    <main class="" style="height: 90vh">
-      <div class="d-flex flex-column align-items-center">
-        <p class=" display-4 pt-2" id="reset">🔄</p>
+    <main class="">
+        <p class="display-4 pt-2" style="margin-left: 3rem;" id="reset">🔄</p>
+      <div class="d-flex flex-column align-items-center pt-3">
         <h1 class="text-center pt-2">Total</h1>
-        <p class=" display-1" id="sum">0</p>
+        <p class="display-1" id="sum">0</p>
       </div>
 
-      <div
-        class="d-flex align-items-center justify-content-around pt-3"
-      >
+      <div class="d-flex align-items-center justify-content-around pt-3">
         <div class="d-flex flex-column align-items-center">
           <p class="display-1" id="thumbs_up">👍</p>
           <p class="pt-2 display-1" id="up_count">0</p>
@@ -39,16 +37,19 @@
           <p class="pt-2 display-1" id="down_count">0</p>
         </div>
       </div>
-    
-      <div class="w-75 mx-auto mt-3">
-        <label for="notes" class="display-3">📝</label>
-        <textarea class="form-control border border-2" id="notes" style="height: 10rem;" placeholder="Enter notes"></textarea>
-      </div>
 
+      <div class="w-75 mx-auto">
+        <label for="notes" class="display-3">📝</label>
+        <textarea
+          class="form-control border border-2"
+          id="notes"
+          style="height: 10rem"
+          placeholder="Enter notes"
+        ></textarea>
+      </div>
     </main>
     <footer
-    class="border footer border-black m-auto d-flex align-items-center justify-content-around"
-    style="min-height: 10vh"
+    class="border py- footer m-auto d-flex align-items-center justify-content-around"
   >
     <a href="./index.html"> <p class="display-1">🏠</p></a>
     <a href="./footage.html"> <p class="display-1">🎥</p></a>
@@ -56,6 +57,5 @@
     <a href="./questions.html"> <p class="display-1">❓</p></a>
   </footer>
     <script type="text/javascript" src="script.js"></script>
-
   </body>
 </html>
