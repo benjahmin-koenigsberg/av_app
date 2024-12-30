@@ -31,6 +31,8 @@ a:hover ,  a:active {
 
 }
 
+
+
 .accordion-header > button {
     font-size: 1.5rem;
     font-weight: bold;
@@ -49,3 +51,18 @@ footer {
     height: 5rem;
     padding-top: 1rem; 
   }
+
+
+  input[type="checkbox"]:checked {
+    background-color: green;
+  }
+
+/* .modal-header, .modal-body {
+    background-color: gray;
+} */
+
+.modal-content { 
+    background-color: lightgray !important; 
+    font-weight: bold;
+    font-size: 2rem;
+ }
