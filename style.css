@@ -1,68 +1,64 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
 }
 
 *,
 *:after,
 *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    position: relative;
-    min-height: 100vh;      
+  position: relative;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 a {
-    text-decoration: none !important;
-    text-transform: none;
-    text-decoration-line: none;
+  text-decoration: none !important;
+  text-transform: none;
+  text-decoration-line: none;
 }
 
-a:hover ,  a:active {
-    text-decoration:   none !important;
-    text-decoration-line: none;
-
+a:hover,
+a:active {
+  text-decoration: none !important;
+  text-decoration-line: none;
 }
-
-
 
 .accordion-header > button {
-    font-size: 1.5rem;
-    font-weight: bold;
-
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.accordion-body{
-    text-align: center;
-    font-size: 1.25rem;
+.accordion-body {
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 5rem;
-    padding-top: 1rem; 
-  }
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  padding-top: 1rem;
+}
 
-
-  input[type="checkbox"]:checked {
-    background-color: green;
-  }
+input[type="checkbox"]:checked {
+  background-color: green;
+}
 
 /* .modal-header, .modal-body {
     background-color: gray;
 } */
 
-.modal-content { 
-    background-color: lightgray !important; 
-    font-weight: bold;
-    font-size: 2rem;
- }
+.modal-content {
+  background-color: lightgray !important;
+  font-weight: bold;
+  font-size: 2rem;
+}
