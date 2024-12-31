@@ -31,7 +31,19 @@ a:active {
   text-decoration-line: none;
 }
 
-.accordion-header > button {
+#thumbs_up, #thumbs_down , #reset{
+  cursor: pointer;
+}
+
+#thumbs_up:active, #thumbs_down:active{
+transform: scale(1.2);
+}
+
+#reset:active{
+  transform: scale(.98)
+}
+
+/* .accordion-header > button {
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -39,7 +51,7 @@ a:active {
 .accordion-body {
   text-align: center;
   font-size: 1.25rem;
-}
+} */
 
 footer {
   position: absolute;

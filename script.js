@@ -1,3 +1,7 @@
+
+
+
+
 const thumbsUp = document.getElementById("thumbs_up");
 const thumbsDown = document.getElementById("thumbs_down");
 let upCounter = document.getElementById("up_count");
@@ -6,10 +10,17 @@ let sum = document.getElementById("sum");
 const reset = document.getElementById("reset");
 let notes = document.getElementById("notes");
 
+const datetime = new Date();
+const date = new Date( datetime.getMonth()).toDateString().slice(0,10); 
+console.log(date)
+// Insert date and time into HTML
+document.getElementById("datetime").innerText = date
+
 reset.addEventListener("click", resetCount);
 thumbsUp.addEventListener("click", addOneUp);
 thumbsDown.addEventListener("click", addOneDown);
 notes.addEventListener("keydown", saveNotes);
+
 
 function resetCount() {
   localStorage.clear();
@@ -73,11 +84,11 @@ function addOneDown() {
   localStorage.setItem("count", JSON.stringify(countObj));
 }
 
-
-
 const myModal = document.getElementById('myModal')
 const myInput = document.getElementById('myInput')
 
 myModal.addEventListener('shown.bs.modal', () => {
   myInput.focus()
 })
+
+

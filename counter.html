@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script type="text/javascript" src="script.js" defer></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
@@ -29,43 +31,49 @@
         /></a>
       </div>
     </nav>
-    <main class="">
-      <p class="display-4 pt-2" style="margin-left: 3rem" id="reset">🔄</p>
+    <main>
+      <p id="datetime" class="h5 text-center pt-4 mt-4" style="color: grey"></p>
+      
+      <div class="d-flex align-items-center" style="padding-right: 7rem;">
+      <img id="reset" style="padding-left: 5rem; height: 2.5rem;" src="./assets/refresh.svg"/>
+      <div class="d-flex justify-content-around align-items-center" style="height: 7rem; width: 15rem; border: .2rem solid black; border-radius: 1rem; margin: auto;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 6.5rem; width: 7rem; background-color: black; border-radius: 1rem;">          
+          <p class="display-1 text-light" id="up_count">0</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center" style="height: 6.5rem; width: 7rem; background-color: black; border-radius: 1rem;">          
+          <p class="display-1 text-light" id="down_count">0</p>
+        </div>
+      </div>
+      </div>
+    </div>
+      <!-- 
       <div class="d-flex flex-column align-items-center">
         <h1 class="text-center">Total</h1>
         <p class="display-1" id="sum">0</p>
-      </div>
+      </div> -->
 
-      <div class="d-flex align-items-center justify-content-around">
-        <div class="d-flex flex-column align-items-center">
-          <p class="display-1" id="thumbs_up">👍</p>
-          <p class="display-1" id="up_count">0</p>
-        </div>
-
-        <div class="d-flex flex-column align-items-center">
-          <p class="display-1" id="thumbs_down">👎</p>
-          <p class="display-1" id="down_count">0</p>
-        </div>
+      <div class="d-flex justify-content-center gap-5">
+          <img class="display-1 mt-3" id="thumbs_up" style="padding-right: .75rem; height: 3rem;" src="./assets/thumbs up.png"/> 
+          <img class="display-1 mt-3" id="thumbs_down" style="padding-left: .75rem; height: 3rem;" src="./assets/thumbs down.png"/>
       </div>
 
       <div class="w-75 mx-auto">
-        <label for="notes" class="display-3">📝</label>
+        <!-- <label for="notes" class="display-3">📝</label> -->
         <textarea
           class="form-control border border-2"
           id="notes"
-          style="height: 10rem"
-          placeholder="Enter notes"
+          style="height: 12rem; border-radius: 1rem !important; margin-top: 4rem !important;"
+          placeholder="Memo..."
         ></textarea>
       </div>
     </main>
     <footer
-      class="border-top py- footer m-auto d-flex align-items-center justify-content-around"
+      class="border-top  footer m-auto d-flex align-items-center justify-content-around"
     >
-      <!-- <a href="./index.html"> <p class="display-1">🏠</p></a> -->
-      <a href="./footage.html"> <p class="display-1">🎥</p></a>
-      <a href="./questions_model.html"> <p class="display-1">❓</p></a>
-      <a href="./counter.html"><p class="display-1">🧮</p></a>
+    <a href="./footage.html"><img src="./assets/camera-reels.svg" style="height: 3rem;"/></p></a>
+    <a href="./questions_model.html"> <img src="./assets/Question-mark.png" style="height: 3rem;" /></a>
+    <a href="./counter.html"><img src="./assets/counter.png" style="height: 3rem;"/></a>
     </footer>
-    <script type="text/javascript" src="script.js"></script>
+    <!-- <script type="text/javascript" src="script.js" defer></script> -->
   </body>
 </html>
