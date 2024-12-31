@@ -1,7 +1,3 @@
-
-
-
-
 const thumbsUp = document.getElementById("thumbs_up");
 const thumbsDown = document.getElementById("thumbs_down");
 let upCounter = document.getElementById("up_count");
@@ -11,16 +7,16 @@ const reset = document.getElementById("reset");
 let notes = document.getElementById("notes");
 
 const datetime = new Date();
-const date = new Date( datetime.getMonth()).toDateString().slice(0,10); 
-console.log(date)
+const date = datetime.toDateString();
+// const date = datetime.getDate()
+//const date = datetime.toLocaleDateString();
 // Insert date and time into HTML
-document.getElementById("datetime").innerText = date
+document.getElementById("datetime").innerText = date;
 
 reset.addEventListener("click", resetCount);
 thumbsUp.addEventListener("click", addOneUp);
 thumbsDown.addEventListener("click", addOneDown);
 notes.addEventListener("keydown", saveNotes);
-
 
 function resetCount() {
   localStorage.clear();
@@ -84,11 +80,9 @@ function addOneDown() {
   localStorage.setItem("count", JSON.stringify(countObj));
 }
 
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
+const myModal = document.getElementById("myModal");
+const myInput = document.getElementById("myInput");
 
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
-
-
+myModal.addEventListener("shown.bs.modal", () => {
+  myInput.focus();
+});
