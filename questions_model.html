@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>AV Activists App</title>
    <link rel="icon" type="image/x-icon" href="/assets/av_logo.png">
+   <script  src="sounds.js"  type="module" defer></script>
 
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
@@ -44,113 +45,56 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Exploiting</h1>
+              <h1 class="modal-title fs-5 m-auto" id="staticBackdropLabel">Exploiting</h1>
               </div>
-            <div class="modal-body">
+            <div class="modal-body h3">
               Hello, how do you feel about humans exploiting other animals?
             </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                 
+                </h2>
+                  <div class="accordion-body d-flex justify-content-evenly">
+                  
+                    <p class="display-4" id="q1_english">🇺🇸</p>
+                    <p class="display-4" id="q1_spanish">🇪🇸</p>
+                    <p class="display-4" id="q1_russian">🇷🇺</p>
+                    <p class="display-4" id="q1_chinesse">🇨🇳</p>
+                  </div>
+               
+             
             <div class="modal-footer">
-              <div class="input-group d-flex justify-content-center">
+              <!-- <div class="input-group d-flex justify-content-center">
                 <input
                   class="form-check-input mt-0 display-6"
                   type="checkbox"
                   value=""
                   aria-label=""
                 />
-              </div>
+              </div> -->
+              <div class="m-auto d-flex gap-4">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-dark"
                 data-bs-dismiss="modal"
               >
-                Close
+                X
               </button>
+              <button
+              type="button"
+              class="btn btn-dark"
+           
+            >
+            →
+            </button>
+            </div>
               <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
             </div>
           </div>
         </div>
       </div>
 
-      <!-- modal 2 -->
-        <!-- Button trigger modal -->
-      <div class="d-flex align-items-start px-5">
-        <p class="display-5">②</p>
-        <button type="button" class="bg-white display-4 px-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-          Agree
-        </button>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade mt-2" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Agree</h1>
-              </div>
-            <div class="modal-body">
-              Do you agree that we should respect other animals?
-            </div>
-            <div class="modal-footer">
-              <div class="input-group d-flex justify-content-center">
-                <input
-                  class="form-check-input mt-0 display-6"
-                  type="checkbox"
-                  value=""
-                  aria-label=""
-                />
-              </div>
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-     <!-- modal 3 -->
-        <!-- Button trigger modal -->
-        <div class="d-flex align-items-start px-5">
-          <p class="display-5">③ </p>
-          <button type="button" class="bg-white display-4 px-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-            Respect 
-          </button>
-        </div>
-  
-        <!-- Modal -->
-        <div class="modal fade mt-2" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel"> Respect </h1>
-                </div>
-              <div class="modal-body">
-                Do you agree that we should respect other animals?
-              </div>
-              <div class="modal-footer">
-                <div class="input-group d-flex justify-content-center">
-                  <input
-                    class="form-check-input mt-0 display-6"
-                    type="checkbox"
-                    value=""
-                    aria-label=""
-                  />
-                </div>
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-              </div>
-            </div>
-          </div>
-        </div>
+    
   
       </section>
     </main>
