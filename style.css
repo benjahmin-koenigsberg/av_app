@@ -13,10 +13,19 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   position: relative;
   min-height: 100vh;
   max-height: 100vh;
+  max-width: 100vw;
+} */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
 }
 
 a {
@@ -31,16 +40,19 @@ a:active {
   text-decoration-line: none;
 }
 
-#thumbs_up, #thumbs_down , #reset{
+#thumbs_up,
+#thumbs_down,
+#reset {
   cursor: pointer;
 }
 
-#thumbs_up:active, #thumbs_down:active{
-transform: scale(1.2);
+#thumbs_up:active,
+#thumbs_down:active {
+  transform: scale(1.2);
 }
 
-#reset:active{
-  transform: scale(.98)
+#reset:active {
+  transform: scale(0.98);
 }
 
 /* .accordion-header > button {
