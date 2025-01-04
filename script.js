@@ -1,4 +1,4 @@
-import { addOneDown, addOneUp, saveNotes, resetCount, storeDaysData, getAllStorage } from "./functions.js";
+import { addOneDown, addOneUp, saveNotes, resetCount, storeDaysData, getAllStorage, archiveArray } from "./functions.js";
 
 const thumbsUp = document.getElementById("thumbs_up");
 const thumbsDown = document.getElementById("thumbs_down");
@@ -29,7 +29,6 @@ let countObj = {
 
 const storedCount = localStorage.getItem("count");
 countObj = JSON.parse(storedCount);
-console.log(countObj)
 
 
 upCounter.textContent = countObj.up;

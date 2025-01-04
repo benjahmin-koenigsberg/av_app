@@ -32,22 +32,21 @@
     <main class="pt-4 m-auto px-2 ">
       <!-- Button trigger modal -->
        <section class="">
-      <div class="d-flex align-items-start px-5">
+      <div class="d-flex align-items-start px-5 question">
         <p class="display-5">①</p>
 
         <button type="button" class="bg-white display-4 px-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           Exploiting
         </button>
       </div>
-
       <!-- Modal -->
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5 m-auto" id="staticBackdropLabel">Exploiting</h1>
+              <h1 class="modal-title fs-5 m-auto t1" id="staticBackdropLabel">Exploiting</h1>
               </div>
-            <div class="modal-body h3">
+            <div class="modal-body h3" id="q1">
               Hello, how do you feel about humans exploiting other animals?
             </div>
               <div class="accordion-item">
@@ -55,23 +54,25 @@
                  
                 </h2>
                   <div class="accordion-body d-flex justify-content-evenly">
-                  
-                    <p class="display-4" id="q1_english">🇺🇸</p>
-                    <p class="display-4" id="q1_spanish">🇪🇸</p>
-                    <p class="display-4" id="q1_russian">🇷🇺</p>
-                    <p class="display-4" id="q1_chinesse">🇨🇳</p>
+                  <div class="d-flex flex-column">
+                    <p class="display-4 flag" id="q1_english">🇺🇸</p>
+                    <p class="display-6 " id="s1_english">🔊</p>
                   </div>
-               
-             
+                  <div class="d-flex flex-column">
+                    <p class="display-4 flag" id="q1_spanish">🇪🇸</p>
+                    <p class="display-6 " id="s1_spanish">🔊</p>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <p class="display-4 flag" id="q1_russian">🇷🇺</p>
+                    <p class="display-6 " id="s1_russian">🔊</p>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <p class="display-4 flag" id="q1_chinesse">🇨🇳</p>
+                    <p class="display-6 " id="s1_chinesse">🔊</p>
+                  </div>
+                  </div>
             <div class="modal-footer">
-              <!-- <div class="input-group d-flex justify-content-center">
-                <input
-                  class="form-check-input mt-0 display-6"
-                  type="checkbox"
-                  value=""
-                  aria-label=""
-                />
-              </div> -->
+         
               <div class="m-auto d-flex gap-4">
               <button
                 type="button"
@@ -88,20 +89,17 @@
             →
             </button>
             </div>
-              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
             </div>
           </div>
         </div>
       </div>
 
     
-  
       </section>
     </main>
     <footer
       class="border-top py- footer m-auto d-flex align-items-center justify-content-around"
     >
-      <!-- <a href="./index.html"> <p class="display-1">🏠</p></a> -->
       <a href="./footage.html"><img src="./assets/camera-reels.svg" style="height: 3rem;"/></p></a>
       <a href="./questions_model.html"> <img src="./assets/Question-mark-active.png" style="height: 3rem;" /></a>
       <a href="./counter.html"><img src="./assets/counter.png" style="height: 3rem;"/></a>
